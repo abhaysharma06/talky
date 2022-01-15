@@ -1,0 +1,16 @@
+{
+  "name": "talky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier:check": "prettier --check **/*.{ts,tsx,css}",
+    "prettier:write": "prettier --write **/*.{ts,tsx,css}"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.5.1"
+  }
+}
