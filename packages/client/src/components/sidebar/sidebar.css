@@ -2,13 +2,14 @@
   flex: 2;
   height: calc(100vh-50px);
   position: sticky;
-  top: 50px;
+  top: 10px;
 }
 
 .scroller {
+  max-height: 100vh;
   overflow-y: scroll;
-  scrollbar-color: #0a4c95 #c2d2e4;
-  scrollbar-width: thin;
+  scrollbar-color: #0a4f95 #c2d2e4;
+  scrollbar-width:  thin;
 }
 
 .sidebarWrapper {
@@ -45,22 +46,3 @@
   margin: 20px 0;
 }
 
-.sidebarFriendList {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.sidebarFriend {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.sidebarFriendImg {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 10px;
-}

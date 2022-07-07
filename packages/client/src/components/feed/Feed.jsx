@@ -2,7 +2,7 @@ import React from "react";
 import { Share } from "../share/Share";
 import { Post } from "../post/Post";
 import "./feed.css";
-import { Posts } from "../../dummyData";
+import { Posts } from "../../constants/dummyData";
 
 export const Feed = () => {
   return (
