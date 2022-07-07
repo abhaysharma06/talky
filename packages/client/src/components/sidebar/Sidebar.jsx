@@ -12,6 +12,8 @@ import {
   BsFillQuestionCircleFill,
   BsFillChatLeftTextFill,
 } from "react-icons/bs";
+import { Users } from "../../constants/dummyData";
+import { CloseFriends } from "../closeFriends/CloseFriends";
 
 export const Sidebar = () => {
   return (
@@ -55,86 +57,9 @@ export const Sidebar = () => {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/2.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/4.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Jack Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/1.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rahul Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/3.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rohit Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/5.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rex Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/6.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rex Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/7.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rex Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/8.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rex Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/10.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rex Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="/assets/person/9.jpeg"
-              alt="Jhon"
-            />
-            <span className="sidebarFriendName">Rex Doe</span>
-          </li>
+          {Users.map((user) => (
+            <CloseFriends key={user.id} user={user} />
+          ))}
         </ul>
       </div>
     </div>
